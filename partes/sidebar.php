@@ -19,7 +19,7 @@
                 <a href="../" class="d-block text-light p-3 border-0"><i class="fas fa-drumstick-bite"></i>
                 Despachos </a>
 
-                <a href="asignaciones.php" class="d-block text-light p-3 border-0"><i class="fas fa-drumstick-bite"></i>
+                <a href="asignaciones/asignaciones.php" class="d-block text-light p-3 border-0"><i class="fas fa-drumstick-bite"></i>
                 Asignaciones</a>
 
                 <a href="../" class="d-block text-light p-3 border-0"><i class="fas fa-drumstick-bite"></i>
