@@ -14,6 +14,6 @@ if (isset($_POST['submit']))
 
     $query_insertar_asignacion = mysqli_query($conexion," UPDATE `asignacion` SET `fecha_vencimiento` = '$nueva_fecha' WHERE `equipo_id_equipo` = '$id_equipo' ");
 
-    echo "Asignacion lista!!.";
+    echo "Fecha modificada!!.";
 }
 ?>
