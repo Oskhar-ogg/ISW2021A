@@ -26,23 +26,15 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
 <script src="js/datepicker.js"></script>
 
 <script>
-
-$(function() {
-      $('[data-toggle="datepicker"]').datepicker({
-        autoHide: true,
-        zIndex: 2048,
+  $(function() {
+        $('[data-toggle="datepicker"]').datepicker({
+          autoHide: true,
+          zIndex: 2048,
+        });
       });
-    });
-  
 </script>
 
 <!-- --------------------------------------------FIN LOADING CALENDAR--------------------------------------------------->
-
-
-<!-- Bootstrap DatePicker -->
-<script src="../libs/js/datepicker.js"></script>
-<script src="../libs/css/datepicker.css"></script>
-
 
 <body>
   <div class="d-flex" id="content-wrapper">
@@ -209,8 +201,8 @@ $(function() {
         <div class="modal-body">
           <input class="form-control" id="Rut-Asignado" placeholder="Rut del asignado">
           <input class="form-control" id="ID_equipo_s" placeholder="ID equipo seleccionado">
-          <input type="text" class="form-control" data-toggle="datepicker">
-          <input class="form-control" id="Fecha-Fin" placeholder="Fecha Vencimiento" readonly="">
+          <input class="form-control" id="Fecha-Inicio" data-toggle="datepicker" placeholder="Fecha Inicio">
+          <input class="form-control" id="Fecha-Fin" data-toggle="datepicker" placeholder="Vencimiento">
 
           
           
