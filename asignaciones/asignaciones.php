@@ -1,5 +1,5 @@
 <!-- --------------head------------------ -->
-<?php include('../partes/head.php')?>
+<?php include('../partes/head.php') ?>
 <!-- --------------fin head-------------- -->
 <?php include("../conexion/conexion.php");
 $Consulta_asignacion = "SELECT * FROM asignacion";
@@ -27,16 +27,17 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
 
 <script>
   $(function() {
-        $('[data-toggle="datepicker"]').datepicker({
-          autoHide: true,
-          zIndex: 2048,
-        
-        });
-      });
+    $('[data-toggle="datepicker"]').datepicker({
+      autoHide: true,
+      zIndex: 2048,
+
+    });
+  });
 </script>
 
 
 <!-- --------------------------------------------FINTEST--------------------------------------------------->
+
 <body>
   <div class="d-flex" id="content-wrapper">
     <!-- -----------------------sideBar---------------------- -->
@@ -398,7 +399,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
     </div>
   </div>
 
-  
+
   <!------------------------------------------------------------------------------------------------ FIN MODAL ASIGNACION ------------------------------------------------------------------------------>
 
   <!------------------------------------------------------------------------------------------------- MODAL RENOVAR PLAZO ------------------------------------------------------------------------------>
@@ -417,17 +418,18 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
               <input class="form-control" id="IDEQUIPO" placeholder="ID">
             </li>
             <li class="list-group-item"> Nueva Fecha de Vencimiento
-              <form action="submit" method="post">
-              <input type="text" class="form-control" data-toggle="datepicker" id="Nueva_Fecha" placeholder="Fecha_Nueva">
+              <form action="NuevaFecha.php" method="post">
+                <input type="text" class="form-control" data-toggle="datepicker" id="Nueva_Fecha" placeholder="Fecha_Nueva">
+
               </form>
-              
+
             </li>
 
           </ul>
         </div>
         <div class="modal-footer">
+          <input type="submit" name="submit" id="submit" value="Guardar Cambios" class="btn btn-success">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Guardar cambios</button>
         </div>
       </div>
     </div>
