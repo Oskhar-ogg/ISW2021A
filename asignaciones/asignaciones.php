@@ -385,7 +385,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
                         <div class="table__item"> Fuente <br> <?php echo $row["fuente"]; ?></div>
                       </td>
                     <?php }
-                  mysqli_free_result($resultado); ?>
+                  mysqli_free_result($resultado); ?> 
                   </table>
               </div>
             </div>
