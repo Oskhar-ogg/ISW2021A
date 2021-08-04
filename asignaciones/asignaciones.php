@@ -199,7 +199,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
             <input type="text" class="form-control" data-toggle="datepicker" name="Fecha-Inicio" id="Fecha-Inicio" placeholder="Fecha Inicio">
             <input type="text" class="form-control" data-toggle="datepicker" name="Fecha-Fin" id="Fecha-Fin" placeholder="Fecha Vencimiento">
             
-          
+          <h5>A continuacion se muestran equipos disponibles: <br> </h5>
           <div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
@@ -215,7 +215,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
                 <a class="nav-link" id="Perfil_4-tab" data-toggle="tab" href="#Perfil_4" role="tab" aria-controls="Perfil_4" aria-selected="false">Perfil 4</a>
               </li>
             </ul>
-            <h5>A continuacion se muestran equipos disponibles: <br> </h5>
+            
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="Perfil_1" role="tabpanel" aria-labelledby="Perfil_1-tab">
                 <?php $Consulta_perfil_1 = "SELECT * FROM perfil WHERE perfil_nombre = 'Perfil 1' " ?>
