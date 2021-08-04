@@ -15,20 +15,35 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 <!-- Bootstrap Js -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
 <!-- Datepicker CSS -->
-<link rel="stylesheet" href="/libs/css/datepicker.css">
+<link rel="stylesheet" href="css/datepicker.css">
 
+<!-- Datepicker JS-->
+<script src="js/datepicker.js"></script>
 
+<script>
+
+$(function() {
+      $('[data-toggle="datepicker"]').datepicker({
+        autoHide: true,
+        zIndex: 2048,
+      });
+    });
+  
+</script>
 
 <!-- --------------------------------------------FINTEST--------------------------------------------------->
 
+
 <!-- Bootstrap DatePicker -->
-<script src="../libs/js/datepicker.js"></script>
-<script src="../libs/css/datepicker.css"></script>
+<script src="../libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="../libs/bootstrap-datepicker/css/bootstrap-datepicker.css"></script>
 
 
 <body>
@@ -196,8 +211,11 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
         <div class="modal-body">
           <input class="form-control" id="Rut-Asignado" placeholder="Rut del asignado">
           <input class="form-control" id="ID_equipo_s" placeholder="ID equipo seleccionado">
-          <input type="text" class="form-control" data-toggle="datepicker" placeholder="Fecha">
+          <input type="text" class="form-control" data-toggle="datepicker">
           <input class="form-control" id="Fecha-Fin" placeholder="Fecha Vencimiento" readonly="">
+
+          
+          
           <div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
