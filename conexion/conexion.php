@@ -1,8 +1,7 @@
 <?php
-$mysqli = mysqli_connect("mysql.face.ubiobio.cl","g1ieci2021","g1ieci2021a","g1bd2021");
-if (!$mysqli) {
-    echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
-    exit;
+$conexion = mysqli_connect("mysql.face.ubiobio.cl","g1ieci2021","g1ieci2021a","g1bd2021");
+if ($conexion->connect_error) {
+    die("Conexion fallida: ". $conn->connect_error);
 }
-mysqli_set_charset($mysqli,"utf8");
+mysqli_set_charset($conexion,"utf8");
 ?>
