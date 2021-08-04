@@ -1,8 +1,8 @@
-<?php
-// $mysqli = mysqli_connect("146.83.194.142", "grup3co", "bdgrup3co", "softbd3co");
-$mysqli = mysqli_connect("localhost","root","","test");
-if (!$mysqli) {
-    echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
-    exit;
+<?php 
+$conexion = mysqli_connect("mysql.face.ubiobio.cl", "g1ieci2021", "g5ieci2021", "g1bd2021");
+
+if ($conexion->connect_error){
+    die("CONEXION FALLIDA: " . $conn->connect_error);   
 }
+mysqli_set_charset($conexion, "utf8");
 ?>
