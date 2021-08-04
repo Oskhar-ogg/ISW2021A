@@ -1,3 +1,8 @@
 <?php
-$conexion = mysqli_connect("localhost", "root", "TomiMati2005", "empresaa_bd" );
-mysqli_set_charset($conexion, "utf8");
+$mysqli = mysqli_connect("mysql.face.ubiobio.cl","g1ieci2021","g1ieci2021a","g1bd2021");
+if (!$mysqli) {
+    echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
+    exit;
+}
+mysqli_set_charset($mysqli,"utf8");
+?>

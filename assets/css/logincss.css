@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+body{
+    background-image: url("screenshot-university-of-future.jpg");
+    background-repeat: repeat;
+}
+.form-contact{
+    width: 500px;
+    background: blue;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-contact h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.form-contact h3{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+.controls{
+    width: 100%;
+    background: rgb(247, 239, 168);
+    padding: 14px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 8px solid rgb(247, 239, 168);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.form-contact p{
+    height: 40px;
+    text-align: justify;
+    font-size: 18px;
+}
+.form-contact a {
+    color: white;
+    text-decoration: none;
+}
+.form-contact a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.form-contact .botons{
+    width: 100%;
+    background: cornflowerblue;
+    border: white;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+} 

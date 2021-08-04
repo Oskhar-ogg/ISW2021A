@@ -102,15 +102,38 @@ echo $respuestaGet;
 ?>
 
 
-<!DOCTYPE html>
+<?php include 'validacioninicio.php'; ?>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <!-- Etiquetas <meta> obligatorias para Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/css/logincss.css">
+
+    <title>LOGIN UNIVERSIDAD DEL SUR</title>
+    <link rel="shortcut icon" type="image/x-icon" href="screenshot-university-of-future.jpg">
+
+    </head>
+    <body>
+        <hr/>
+        <section class="form-contact">
+            <a href="imag.png" class="image" title="imag.png"></a>
+            <img alt="LOGO UDS" src="../assets/css/UNIVERSIDAD__1_.png" decoding="async" width="160" height="120" class="image" srcset="imag.png 2x, imag.png 3.5x" data-file-width="1600" data-file-height="1200"> </a>
+            <hr/>
+            <form>
+            <input class="controls" onkeypress="cambiarRut()" type="text" name="nombres" id="rut" placeholder="Ingrese rut" requeried><br>
+            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese contraseña" requeried><br/>            
+            <input class="botons" name="boton" type="submit" value="INGRESAR A PLATAFORMA">
+            </form>
+        </section>
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="../assets/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../assets/popper/popper.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/loginuds.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
