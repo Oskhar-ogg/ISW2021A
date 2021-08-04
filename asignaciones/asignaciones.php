@@ -198,7 +198,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
             <input class="form-control" type="text" name="Rut-encargado" id="Rut-encargado" placeholder="Rut Encargado">
             <input type="text" class="form-control" data-toggle="datepicker" name="Fecha-Inicio" id="Fecha-Inicio" placeholder="Fecha Inicio">
             <input type="text" class="form-control" data-toggle="datepicker" name="Fecha-Fin" id="Fecha-Fin" placeholder="Fecha Vencimiento">
-            <input type="submit" name="submit" id="submit" value="Guardar Cambios" class="btn btn-success">
+            
           </form>
           <div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -413,14 +413,15 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
           </button>
         </div>
         <div class="modal-body">
+        <form action="NuevaFecha.php" method="post">
           <ul class="list-group list-group-horizontal-md">
             <li class="list-group-item"> ID Equipo
-              <input class="form-control" id="IDEQUIPO" placeholder="ID">
+              <input class="form-control" name="IDEQUIPO" id="IDEQUIPO" placeholder="ID">
             </li>
             <li class="list-group-item"> Nueva Fecha de Vencimiento
-              <form action="NuevaFecha.php" method="post">
-                <input type="text" class="form-control" data-toggle="datepicker" id="Nueva_Fecha" placeholder="Fecha_Nueva">
-
+              
+                <input type="text" class="form-control" data-toggle="datepicker" name="Nueva_Fecha" id="Nueva_Fecha" placeholder="Fecha_Nueva">
+                <input type="submit" name="submit" id="submit" value="Guardar Cambios" class="btn btn-success">
               </form>
 
             </li>
@@ -428,7 +429,6 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
           </ul>
         </div>
         <div class="modal-footer">
-          <input type="submit" name="submit" id="submit" value="Guardar Cambios" class="btn btn-success">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
         </div>
       </div>
