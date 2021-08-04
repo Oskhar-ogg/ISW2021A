@@ -453,17 +453,13 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
           <?php $Consulta_equipos = "SELECT * FROM asignacion WHERE usuario_id_usuario = '#IDEQUIPOELIM' " ?>
                 <?php $resultado = mysqli_query($conexion, $Consulta_equipos);
                 while ($row = mysqli_fetch_assoc($resultado)) { ?>
-            <option><div class="table__item"> Nombre perfil <br> <?php echo $row["perfil_nombre"]; ?></div></option>
-            <option>Equipo 2</option>
-            <option>Equipo 3</option>
-            <option>Equipo 4</option>
-            <option>Equipo 5</option>
-          </select>
+            <option> <div class="table__item"> Nombre perfil <br> <?php echo $row["perfil_nombre"]; ?> </div> </option>
+            <?php }
+                  mysqli_free_result($resultado); ?>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
           <input type="submit" name="submit" id="submit" value="Eliminar Seleccionado" class="btn btn-danger">
-          <button type="button" class="">Eliminar Seleccionado</button>
         </div>
         </form>
       </div>
@@ -476,5 +472,4 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
 </body>
-
 </html>
