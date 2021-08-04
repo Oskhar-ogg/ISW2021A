@@ -448,11 +448,12 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
         </div>
         <div class="modal-body">
           <form action="EliminarAsig.php" method="post">
-
-          
           <input class="form-control" id="IDEQUIPOELIM" placeholder="Cod Usuario">
           <select class="form-control" id="exampleFormControlSelect1">
-            <option>Equipo 1</option>
+          <?php $Consulta_equipos = "SELECT * FROM asignacion WHERE usuario_id_usuario = '#IDEQUIPOELIM' " ?>
+                <?php $resultado = mysqli_query($conexion, $Consulta_equipos);
+                while ($row = mysqli_fetch_assoc($resultado)) { ?>
+            <option><div class="table__item"> Nombre perfil <br> <?php echo $row["perfil_nombre"]; ?></div></option>
             <option>Equipo 2</option>
             <option>Equipo 3</option>
             <option>Equipo 4</option>
@@ -461,7 +462,8 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-danger">Eliminar Seleccionado</button>
+          <input type="submit" name="submit" id="submit" value="Eliminar Seleccionado" class="btn btn-danger">
+          <button type="button" class="">Eliminar Seleccionado</button>
         </div>
         </form>
       </div>
