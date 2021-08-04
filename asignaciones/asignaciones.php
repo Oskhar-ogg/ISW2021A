@@ -178,16 +178,6 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
       </div>
     </div>
   </div>
-
-
-
-
-
-  
-
-
-
-
   <!-----------------------------------------------------------------------Modal ASIGNAR EQUIPO---------------------------------------------------->
   <div class="modal fade" id="modalAsigEqui" tabindex="6" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
