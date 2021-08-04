@@ -199,7 +199,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
             <input type="text" class="form-control" data-toggle="datepicker" name="Fecha-Inicio" id="Fecha-Inicio" placeholder="Fecha Inicio">
             <input type="text" class="form-control" data-toggle="datepicker" name="Fecha-Fin" id="Fecha-Fin" placeholder="Fecha Vencimiento">
             
-          </form>
+          
           <div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
@@ -393,8 +393,10 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
 
         </div>
         <div class="modal-footer">
+        <input type="submit" name="submit" id="submit" value="Guardar Cambios" class="btn btn-success">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
         </div>
+        </form>
       </div>
     </div>
   </div>
@@ -421,16 +423,18 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
             <li class="list-group-item"> Nueva Fecha de Vencimiento
               
                 <input type="text" class="form-control" data-toggle="datepicker" name="Nueva_Fecha" id="Nueva_Fecha" placeholder="Fecha_Nueva">
-                <input type="submit" name="submit" id="submit" value="Guardar Cambios" class="btn btn-success">
-              </form>
+                
+              
 
             </li>
 
           </ul>
         </div>
         <div class="modal-footer">
+        <input type="submit" name="submit" id="submit" value="Guardar Cambios" class="btn btn-success">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
         </div>
+        </form>
       </div>
     </div>
   </div>
