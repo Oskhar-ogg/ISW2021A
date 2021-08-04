@@ -7,12 +7,6 @@
  *
  * Date: 2019-02-19T12:18:04.827Z
  */
-$(function() {
-  $('[data-toggle="datepicker"]').datepicker({
-     autoHide: true,
-     zIndex: 2048,
-  });
-});
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('jquery')) :
