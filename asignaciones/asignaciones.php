@@ -163,7 +163,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
 
   <!-----------------------------------------------------------------------Modal ASIGNAR EQUIPO---------------------------------------------------->
   <div class="modal fade" id="modalAsigEqui" tabindex="6" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Asignar Equipo</h5>
@@ -172,12 +172,13 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
           </button>
         </div>
         <div class="modal-body">
-          <input class="form-control" id="Rut-Asignado" placeholder="Rut del asignado">
-          <input class="form-control" id="ID_equipo_s" placeholder="ID equipo seleccionado">
-          <div class="input-group date" id="dp-asig">
-            <input type="text" class="form-control" placeholder="Fecha Inicio"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
-          </div>
-          <input class="form-control" id="Fecha-Fin" placeholder="Fecha Vencimiento" readonly="">
+          <form method="post" id="form_asignacion">
+            <input class="form-control" type="text" name="Rut-Asignado" id="Rut-Asignado" placeholder="Rut del asignado">
+            <input class="form-control" type="text" name="ID_equipo_s" id="ID_equipo_s" placeholder="ID equipo seleccionado">
+            <input class="form-control" id="Fecha-Inicio" placeholder="Fecha Inicio" readonly="">
+            <input class="form-control" id="Fecha-Fin" placeholder="Fecha Vencimiento" readonly="">
+            <input type="submit" name="Insert_asignar" id="Insert_asignar" value="Guardar Cambios" class="btn btn-success">
+          </form>
           <div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
@@ -195,7 +196,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="Perfil_1" role="tabpanel" aria-labelledby="Perfil_1-tab">
-              <?php $Consulta_perfil_1 = "SELECT * FROM perfil WHERE perfil_nombre = 'Perfil 1' " ?>
+                <?php $Consulta_perfil_1 = "SELECT * FROM perfil WHERE perfil_nombre = 'Perfil 1' " ?>
                 <?php $resultado = mysqli_query($conexion, $Consulta_perfil_1);
                 while ($row = mysqli_fetch_assoc($resultado)) { ?>
                   <table>
@@ -233,7 +234,8 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
                       <td>
                         <div class="table__item"> Fuente <br> <?php echo $row["fuente"]; ?></div>
                       </td>
-                    <?php } mysqli_free_result($resultado); ?>
+                    <?php }
+                  mysqli_free_result($resultado); ?>
                   </table>
               </div>
               <div class="tab-pane fade" id="Perfil_2" role="tabpanel" aria-labelledby="Perfil_2-tab">
@@ -275,11 +277,12 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
                       <td>
                         <div class="table__item"> Fuente <br> <?php echo $row["fuente"]; ?></div>
                       </td>
-                    <?php } mysqli_free_result($resultado);?>
+                    <?php }
+                  mysqli_free_result($resultado); ?>
                   </table>
               </div>
               <div class="tab-pane fade" id="Perfil_3" role="tabpanel" aria-labelledby="Perfil_3-tab">
-              <?php $Consulta_perfil_3 = "SELECT * FROM perfil WHERE perfil_nombre = 'Perfil 3' " ?>
+                <?php $Consulta_perfil_3 = "SELECT * FROM perfil WHERE perfil_nombre = 'Perfil 3' " ?>
                 <?php $resultado = mysqli_query($conexion, $Consulta_perfil_3);
                 while ($row = mysqli_fetch_assoc($resultado)) { ?>
                   <table>
@@ -317,11 +320,12 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
                       <td>
                         <div class="table__item"> Fuente <br> <?php echo $row["fuente"]; ?></div>
                       </td>
-                    <?php } mysqli_free_result($resultado);?>
-                    </table>
+                    <?php }
+                  mysqli_free_result($resultado); ?>
+                  </table>
               </div>
               <div class="tab-pane fade" id="Perfil_4" role="tabpanel" aria-labelledby="Perfil_4-tab">
-              <?php $Consulta_perfil_4 = "SELECT * FROM perfil WHERE perfil_nombre = 'Perfil 4' " ?>
+                <?php $Consulta_perfil_4 = "SELECT * FROM perfil WHERE perfil_nombre = 'Perfil 4' " ?>
                 <?php $resultado = mysqli_query($conexion, $Consulta_perfil_4);
                 while ($row = mysqli_fetch_assoc($resultado)) { ?>
                   <table>
@@ -359,19 +363,33 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
                       <td>
                         <div class="table__item"> Fuente <br> <?php echo $row["fuente"]; ?></div>
                       </td>
-                    <?php } mysqli_free_result($resultado); ?>
-                    </table>
+                    <?php }
+                  mysqli_free_result($resultado); ?>
+                  </table>
               </div>
             </div>
           </div>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" id="Guardar_asignacion">Guardar cambios</button>
         </div>
       </div>
     </div>
   </div>
+
+  <!--Funcion para añadir a bd -->
+
+  <script>
+    $(document).ready(function(){
+      $('#form_asignacion').on('submit', function(event){
+        event.preventDefault();
+        if($('#Rut-Asignado').val() == ""){
+
+        }
+      });
+    })
+  </script>
   <!------------------------------------------------------------------------------------------------ FIN MODAL ASIGNACION ------------------------------------------------------------------------------>
 
   <!------------------------------------------------------------------------------------------------- MODAL RENOVAR PLAZO ------------------------------------------------------------------------------>
@@ -390,9 +408,9 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
               <input class="form-control" id="IDEQUIPO" placeholder="ID">
             </li>
             <li class="list-group-item"> Nueva Fecha de Vencimiento
-            <input class="form-control" id="Nueva_Fecha" placeholder="Fecha_Nueva">
+              <input class="form-control" id="Nueva_Fecha" placeholder="Fecha_Nueva">
             </li>
-            
+
           </ul>
         </div>
         <div class="modal-footer">
