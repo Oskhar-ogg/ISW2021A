@@ -466,9 +466,6 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
     </div>
   </div>
   <!------------------------------------------------------------------------------------------------ FIN MODAL ELIMINACION ------------------------------------------------------------------------------>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
 </body>
