@@ -196,8 +196,8 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
             <input class="form-control" type="text" name="Rut-Asignado" id="Rut-Asignado" placeholder="Rut del asignado">
             <input class="form-control" type="text" name="ID_equipo_s" id="ID_equipo_s" placeholder="ID equipo seleccionado">
             <input class="form-control" type="text" name="Rut-encargado" id="Rut-encargado" placeholder="Rut Encargado">
-            <input type="text" class="form-control" data-toggle="datepicker" id="Fecha-Inicio" placeholder="Fecha Inicio">
-            <input type="text" class="form-control" data-toggle="datepicker" id="Fecha-Fin" placeholder="Fecha Vencimiento">
+            <input type="text" class="form-control" data-toggle="datepicker" name="Fecha-Inicio" id="Fecha-Inicio" placeholder="Fecha Inicio">
+            <input type="text" class="form-control" data-toggle="datepicker" name="Fecha-Fin" id="Fecha-Fin" placeholder="Fecha Vencimiento">
             <input type="submit" name="submit" id="submit" value="Guardar Cambios" class="btn btn-success">
           </form>
           <div>
