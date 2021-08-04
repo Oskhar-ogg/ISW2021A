@@ -202,7 +202,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
           <input class="form-control" id="Rut-Asignado" placeholder="Rut del asignado">
           <input class="form-control" id="ID_equipo_s" placeholder="ID equipo seleccionado">
           <input class="form-control" id="Fecha-Inicio" data-toggle="datepicker" placeholder="Fecha Inicio">
-          <input class="form-control" id="Fecha-Fin" data-toggle="datepicker" placeholder="Vencimiento">
+          <input class="form-control" id="Fecha-Fin" data-toggle="datepicker" placeholder="Vencimiento" readonly ="">
 
           
           
@@ -418,7 +418,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
               <input class="form-control" id="IDEQUIPO" placeholder="ID">
             </li>
             <li class="list-group-item"> Nueva Fecha de Vencimiento
-            <input class="form-control" id="Nueva_Fecha" placeholder="Fecha_Nueva">
+            <input class="form-control" id="Fecha-Inicio" data-toggle="datepicker" placeholder="Nueva Fecha Vencimiento">
             </li>
             
           </ul>
