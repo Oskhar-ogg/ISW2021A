@@ -417,7 +417,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
               <input class="form-control" id="IDEQUIPO" placeholder="ID">
             </li>
             <li class="list-group-item"> Nueva Fecha de Vencimiento
-              <input class="form-control" id="Nueva_Fecha" placeholder="Fecha_Nueva">
+              <input type="text" class="form-control" data-toggle="datepicker" id="Nueva_Fecha" placeholder="Fecha_Nueva">
             </li>
 
           </ul>
