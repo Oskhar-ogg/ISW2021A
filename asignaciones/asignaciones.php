@@ -423,11 +423,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
             <li class="list-group-item"> Nueva Fecha de Vencimiento
               
                 <input type="text" class="form-control" data-toggle="datepicker" name="Nueva_Fecha" id="Nueva_Fecha" placeholder="Fecha_Nueva">
-                
-              
-
             </li>
-
           </ul>
         </div>
         <div class="modal-footer">
@@ -451,6 +447,9 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
           </button>
         </div>
         <div class="modal-body">
+          <form action="EliminarAsig.php" method="post">
+
+          
           <input class="form-control" id="IDEQUIPOELIM" placeholder="Cod Usuario">
           <select class="form-control" id="exampleFormControlSelect1">
             <option>Equipo 1</option>
@@ -464,6 +463,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
           <button type="button" class="btn btn-danger">Eliminar Seleccionado</button>
         </div>
+        </form>
       </div>
     </div>
   </div>
