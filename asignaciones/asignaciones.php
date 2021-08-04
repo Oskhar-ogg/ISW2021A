@@ -11,7 +11,7 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
 
-<script src="js/calendar.js"></script>
+
 
 <!-- Bootstrap DatePicker -->
 <script src="../libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
