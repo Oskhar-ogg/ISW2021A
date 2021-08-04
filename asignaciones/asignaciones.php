@@ -15,14 +15,12 @@ $Consulta_asignacion = "SELECT * FROM asignacion";
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
 <!-- Bootstrap Js -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
 <!-- Datepicker CSS -->
 <link rel="stylesheet" href="css/datepicker.css">
+
 
 <!-- Datepicker JS-->
 <script src="js/datepicker.js"></script>
